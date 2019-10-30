@@ -5,6 +5,11 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "sinatra"
-gem "rspec"
+
+group :test do
+  gem "rspec"
+  gem "simplecov"
+end
+
 
 # gem "rails"
